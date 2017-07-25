@@ -15,21 +15,4 @@ def show_current_wifi(base_command):
         elif "lRSSI" in i:
             wifi_result["signal_strength"] = i.split(":")[-1]
 
-    print (wifi_result)
-
-# example output
-#       agrCtlRSSI: -72
-#      agrExtRSSI: 0
-#     agrCtlNoise: -95
-#     agrExtNoise: 0
-#           state: running
-#         op mode: station
-#      lastTxRate: 176
-#         maxRate: 1300
-# lastAssocStatus: 0
-#     802.11 auth: open
-#       link auth: wpa2-psk
-#           BSSID: 10:86:8c:8b:8e:38
-#            SSID: 8B8E38
-#             MCS: 2
-#         channel: 36,80
+    return wifi_result
