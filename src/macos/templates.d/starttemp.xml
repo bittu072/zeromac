@@ -3,12 +3,16 @@
 <plist version="1.0">
     <dict>
         <key>Label</key>
-        <string>**title**</string>
+        **title**
         <key>ProgramArguments</key>
         <array>
-            <string>**script**</string>
+            **script**
         </array>
         <key>KeepAlive</key>
         <true/>
     </dict>
 </plist>
+
+
+<!-- <string>**title**</string>
+<string>**script**</string> -->
