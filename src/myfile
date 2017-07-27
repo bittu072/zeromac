@@ -3,12 +3,13 @@
 <plist version="1.0">
     <dict>
         <key>Label</key>
-        **title**
-        <key>ProgramArguments</key>
+		This is test        <key>ProgramArguments</key>
         <array>
-            **script**
-        </array>
+			this/is/path/of/script        </array>
         <key>KeepAlive</key>
         <true/>
     </dict>
 </plist>
+
+
+		This is test			this/is/path/of/script
