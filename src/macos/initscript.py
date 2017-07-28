@@ -10,7 +10,7 @@ def place_xml(path):
             if "**title**" in line:
                 new_file.write("\t\tThis is test\n")
             elif "**script**" in line:
-                new_file.write("\t\t\tthis/is/path/of/script\n")
+                new_file.write("\t\t\t" + path +"/zeromac\n")
             else:
                 new_file.write(line)
     new_file.close()
