@@ -14,4 +14,4 @@ def place_xml(path):
             else:
                 new_file.write(line)
     new_file.close()
-    print "done"
+    print ("done")
