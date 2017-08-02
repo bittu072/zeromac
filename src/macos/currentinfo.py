@@ -2,7 +2,7 @@ import os
 import datetime
 
 def show_current_wifi(base_command):
-    time_now = datetime.date.today()
+    time_now = datetime.datetime.now()
     enter_command = base_command + " --getinfo"
     # result = os.system(enter_command)
     temp_result = os.popen(enter_command)
@@ -11,11 +11,10 @@ def show_current_wifi(base_command):
     result = result.replace(" ", "").splitlines( )
 
     wifi_result = {}
+    wifi_result["time"] = str(time_now)
     for i in result:
         if ("SSID" or "BSSID") in i:
             wifi_result[i.split(":")[0]] = i.split(":",1)[-1]
         elif "lRSSI" in i:
             wifi_result["signal_strength"] = i.split(":")[-1]
-    # return time with the result
-    # print (time_now)
     return wifi_result
