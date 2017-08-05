@@ -6,6 +6,7 @@ base_command = "/System/Library/PrivateFrameworks/Apple80211.framework/Versions/
 result = show_current_wifi(base_command)
 # print result
 
+# xml_path = "/System/Library/LaunchDaemons/zeromac.plist"
 xml_path = "/System/Library/LaunchDaemons/zerop"
 place_xml(xml_path)
 # change permissin of the file
