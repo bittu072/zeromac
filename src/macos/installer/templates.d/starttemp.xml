@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Label</key>
-	**title
+	<string>com.zerop.crontabtest</string>
 	<key>ProgramArguments</key>
 	<array>
 		<string>open</string>
@@ -12,7 +12,7 @@
 	</array>
 	<key>RunAtLoad</key>
 	<true/>
-	<key>StartInterval</key>
-	<integer>30</integer>
+	<key>KeepAlive</key>
+	<true/>
 </dict>
 </plist>
