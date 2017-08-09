@@ -3,6 +3,7 @@ import os
 base_path = os.path.dirname(os.path.abspath(__file__))
 
 def place_xml(path, app_path):
+    """put xml in associate directory"""
     xml_path = base_path + "/templates.d/starttemp.xml"
     new_file = open(path, 'w')
     with open(xml_path) as f:

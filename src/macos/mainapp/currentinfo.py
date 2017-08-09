@@ -2,6 +2,7 @@ import os
 import datetime
 
 def show_current_wifi(base_command):
+    """information of current wifi"""
     time_now = datetime.datetime.now()
     enter_command = base_command + " --getinfo"
     # result = os.system(enter_command)
